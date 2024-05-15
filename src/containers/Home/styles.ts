@@ -1,4 +1,4 @@
-import { StyleSheet } from 'react-native';
+import { Dimensions, StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
   container: {
@@ -20,6 +20,13 @@ export default StyleSheet.create({
     justifyContent: 'center'
   },
   list: {
-    height:200
+    height:200,
+    backgroundColor: '#000000'
   },
+  map: {
+    maxHeight: Dimensions.get('window').height,
+    width: Dimensions.get('window').width,
+    flex: 1,
+    zIndex: -1
+  }
 });
